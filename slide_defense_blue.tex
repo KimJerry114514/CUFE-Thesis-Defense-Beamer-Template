@@ -1,0 +1,245 @@
+\documentclass{beamer}
+\usepackage{ctex, hyperref}
+\usepackage[T1]{fontenc}
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+
+\author{你的名字}
+\title{论文题目}
+\subtitle{本科毕业论文答辩}
+\institute[XX学院]{中央财经大学XX学院}%在`[]`中打入会在下栏中显示
+\date{2026年4月}
+\usepackage{cufe}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+\begin{document}
+
+\kaishu
+\begin{frame}
+    \titlepage
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[width=0.2\linewidth]{pic/cufe_logo_blue.eps}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{汇报提纲}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+\begin{frame}{答辩汇报逻辑}
+    \begin{block}{总体思路}
+        本次汇报围绕“研究问题从何而来、本文做了什么、得到了什么结果、结论如何回应问题”展开。
+    \end{block}
+    \begin{itemize}
+        \item 背景类内容保证论文完整性，但答辩时间有限，正式汇报时只简要交代。
+        \item 研究内容与方法、研究结果与解释分析是重点，集中说明自己的研究设计、实证/模型/案例工作和主要发现。
+        \item 结论、不足与展望用于收束全文，回应研究问题，并说明后续可以继续推进的方向。
+    \end{itemize}
+\end{frame}
+
+\section{研究背景与问题提出}
+
+\begin{frame}{问题提出}
+    \begin{columns}
+        \begin{column}{0.48\textwidth}
+            \begin{exampleblock}{现实背景}
+                \begin{itemize}
+                    \item 请替换为与你论文相关的政策、行业或现实问题。
+                    \item 说明该问题为何重要、为何具有研究价值。
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{exampleblock}{理论缺口}
+                \begin{itemize}
+                    \item 请替换为已有文献尚未充分解释的部分。
+                    \item 说明本文从哪个角度切入并形成补充。
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+\section{研究内容与方法}
+
+\subsection{研究内容}
+
+\begin{frame}{研究内容与方法：主体框架}
+    \begin{block}{本部分作用}
+        本部分展示研究的主要内容和采用的研究方法，让评委知道论文的主体框架。
+    \end{block}
+    \begin{enumerate}
+        \item 明确研究问题：本文具体回答什么问题？
+        \item 构建研究设计：样本、变量、模型或案例如何组织？
+        \item 展开实证/模型分析：如何验证研究假设？
+        \item 提炼研究结论：结果如何回应前文问题？
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{研究问题与研究假设}
+    \begin{columns}
+        \begin{column}{0.48\textwidth}
+            \begin{block}{研究问题}
+                \begin{itemize}
+                    \item 问题一：请填写核心研究问题。
+                    \item 问题二：请填写机制或路径问题。
+                    \item 问题三：请填写异质性或拓展问题。
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{block}{研究假设}
+                \begin{itemize}
+                    \item H1：核心变量对结果变量存在影响。
+                    \item H2：该影响通过某一机制实现。
+                    \item H3：不同情境下影响存在差异。
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{研究方法}
+    \begin{itemize}
+        \item \textbf{数据来源：}说明样本范围、数据来源、清洗规则与变量构造。
+        \item \textbf{模型设定：}说明核心模型、识别策略或案例分析逻辑。
+        \item \textbf{检验路径：}依次展示基准回归/主分析、机制检验、稳健性检验和异质性分析。
+    \end{itemize}
+    \begin{exampleblock}{核心模型示例}
+        \begin{equation*}
+            Y_{it}=\alpha+\beta X_{it}+\gamma Controls_{it}+\mu_i+\lambda_t+\varepsilon_{it}
+        \end{equation*}
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}{本文的主要工作}
+    \begin{itemize}
+        \item \textbf{工作一：}整理并构建研究所需的数据、指标或案例材料。
+        \item \textbf{工作二：}围绕研究问题设计模型、变量体系或分析框架。
+        \item \textbf{工作三：}完成基准结果、机制检验、稳健性检验与结果解释。
+        \item \textbf{工作四：}结合结果提出论文结论、贡献和未来展望。
+    \end{itemize}
+\end{frame}
+
+\section{研究结果与解释分析}
+
+\subsection{主要发现}
+
+\begin{frame}{研究结果与解释分析：主要发现概览}
+    \begin{block}{本部分作用}
+        本部分呈现研究的主要发现，让评委对论文成果形成初步印象。
+    \end{block}
+    \begin{itemize}
+        \item 发现一：核心解释变量对被解释变量具有显著影响。
+        \item 发现二：机制检验支持本文提出的理论路径。
+        \item 发现三：稳健性检验表明主要结论较为可靠。
+        \item 发现四：异质性分析揭示结果在不同样本或情境下的差异。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{基准结果}
+    \begin{table}[h]
+        \centering
+        \small
+        \begin{tabular}{lccc}
+            \toprule
+            变量 & (1) & (2) & (3) \\
+            \midrule
+            核心解释变量 & 0.123*** & 0.118*** & 0.105** \\
+            控制变量 & 否 & 是 & 是 \\
+            固定效应 & 否 & 否 & 是 \\
+            样本量 & 1,000 & 1,000 & 1,000 \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \begin{itemize}
+        \item 汇报时重点解释核心系数的方向、显著性和经济含义。
+        \item 不逐列读表，而是说明结果如何回答研究问题。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{机制检验与稳健性检验}
+    \begin{columns}
+        \begin{column}{0.48\textwidth}
+            \begin{exampleblock}{机制检验}
+                \begin{itemize}
+                    \item 机制变量一：支持理论路径。
+                    \item 机制变量二：进一步解释作用过程。
+                    \item 与研究假设形成闭环。
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{exampleblock}{稳健性检验}
+                \begin{itemize}
+                    \item 替换变量或模型设定。
+                    \item 调整样本范围。
+                    \item 控制潜在干扰因素。
+                \end{itemize}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{结论、不足与展望}
+
+\subsection{结论}
+
+\begin{frame}{结论、不足与展望：收尾部分}
+    \begin{block}{本部分作用}
+        本部分总结研究成果，并对未来研究方向进行展望，让评委了解论文的收尾部分。
+    \end{block}
+    \begin{itemize}
+        \item 结论要对应前文研究问题，不另起炉灶。
+        \item 贡献要落在本文自己的工作上，避免泛泛而谈。
+        \item 展望要诚实说明不足，并给出可继续推进的方向。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{研究结论}
+    \begin{enumerate}
+        \item 结论一：本文回答了核心研究问题，并得到明确经验证据。
+        \item 结论二：机制分析说明该影响通过某一重要路径实现。
+        \item 结论三：稳健性与异质性检验进一步支撑主要发现。
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{不足与展望}
+    \begin{itemize}
+        \item \textbf{研究不足：}样本范围、变量测度、模型设定或外部有效性仍有改进空间。
+        \item \textbf{未来展望：}后续可从更长时间跨度、更细粒度数据、跨区域比较或新方法应用继续拓展。
+        \item \textbf{答辩表述：}不足要客观可控，展望要与本文研究自然衔接。
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        {\Huge 谢谢各位老师！}\\[0.5cm]
+        {\Large 敬请批评指正}
+    \end{center}
+\end{frame}
+
+\end{document}
